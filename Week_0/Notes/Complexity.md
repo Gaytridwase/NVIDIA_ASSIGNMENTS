@@ -118,7 +118,7 @@ General lower bound	Comparison-based Quick Sort requires at least Ω(n log n) ti
 ## Big-Theta — Θ(n log n)	
 Tight bound for balanced partitions	When partitions are consistently balanced,the running time is Θ(n log n)
 
-## Linear Search 
+## 6. Linear Search 
 How it works: Linear Search checks each element one by one until the target element is found or the array ends.
 
 ## Time and Space Complexity
