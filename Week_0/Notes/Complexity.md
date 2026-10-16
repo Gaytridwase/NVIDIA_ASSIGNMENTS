@@ -4,12 +4,11 @@ Complexity Analysis
 Bubble sort repeatedly compares adjacent elements and swaps them if they are in the wrong order. After each pass, the largest unsorted element moves to its correct position.
 
 ## Time and space complexity
-
-            Case                                            Time Complexity	              
-1.Best Case (Array is already sorted)	                          O(n)	                  
-2.Average Case (Array elements are in random order)	              O(n^2)	               
-3.Worst Case(Array is sorted in reverse order)                    O(n^2)	                
-4.Auxiliary Space                                                 O(1)	   
+	              
+1.Best Case (Array is already sorted) - O(n)	                  
+2.Average Case (Array elements are in random order) - O(n^2)	               
+3.Worst Case(Array is sorted in reverse order) - O(n^2)	                
+4.Auxiliary Space - O(1)	   
 
 ## Properties
 Stable: Yes - equal elements maintain their relative order because we swap only when arr[j] > arr[j+1].
@@ -25,13 +24,11 @@ Worst case - O(n^2): A reverse-sorted array requires the maximum number of compa
 ## 2. Insertion sort
 How it works: Insertion Sort takes one element at a time and inserts it into its correct position in the already-sorted part of the array.
 
-## Time and Space Complexity
-
-               Case	                                     Time Complexity	
-1. Best Case(Array is already sorted)	                       O(n)	
-2. Average Case(Array elements are in random order)	           O(n^2)	
-3. Worst Case(Array is sorted in reverse order)                O(n^2)	
-4. Auxiliary Space	                                           O(1)
+## Time and Space Complexity	
+1. Best Case(Array is already sorted) - O(n)	
+2. Average Case(Array elements are in random order) - O(n^2)	
+3. Worst Case(Array is sorted in reverse order) - O(n^2)	
+4. Auxiliary Space - O(1)
 
 ## Properties
 Stable: Yes-equal elements maintain their relative order because we shift elements only when arr[j] > key.
@@ -48,11 +45,10 @@ Worst case — O(n^2): In a reverse-sorted array, each new element must be shift
 How it works: Selection Sort repeatedly finds the smallest element from the unsorted part of the array and swaps it with the first element of that unsorted part.
 
 ## Time and Space Complexity
-             Case	                                 Time Complexity
-1. Best Case(Array is already sorted)	                  O(n^2)	
-2. Average Case(Array elements are in random order)	      O(n^2)	
-3. Worst Case(Array is sorted in reverse order)	          O(n^2)
-4. Auxiliary Space	                                      O(1)
+1. Best Case(Array is already sorted) - O(n^2)	
+2. Average Case(Array elements are in random order) - O(n^2)	
+3. Worst Case(Array is sorted in reverse order)	- O(n^2)
+4. Auxiliary Space - O(1)
 
 ## Properties
 Stable: No — the standard implementation may change the relative order of equal elements because of swapping.
@@ -69,12 +65,12 @@ Worst case — O(n^2): It still performs the same number of comparisons, regardl
 How it works - Merge Sort uses the Divide and Conquer technique. It divides the array into smaller halves, sorts them recursively, and then merges the sorted halves.
 
 ## Time and Space Complexity
-                Case	                                      Time Complexity	
-1. Best Case(Array is already sorted)	                         O(n log n)	
-2. Average Case(Array elements are in random order)	             O(n log n)	
-3. Worst Case(Array is sorted in reverse order)	                 O(n log n)	
-4. Auxiliary Space(A temporary array is used during merging)	    O(n)	
-5. Recursion Stack(The array is repeatedly divided into halves)	  O(log n)	
+               	
+1. Best Case(Array is already sorted) - O(n log n)	
+2. Average Case(Array elements are in random order) - O(n log n)	
+3. Worst Case(Array is sorted in reverse order) - O(n log n)	
+4. Auxiliary Space(A temporary array is used during merging) - O(n)	
+5. Recursion Stack(The array is repeatedly divided into halves) - O(log n)	
 
 ## Properties
 Stable: Yes - if equal elements from the left half are selected first during merging, their relative order is preserved.
@@ -126,14 +122,13 @@ Tight bound for balanced partitions	When partitions are consistently balanced,th
 How it works: Linear Search checks each element one by one until the target element is found or the array ends.
 
 ## Time and Space Complexity
-                Case	                             Time Complexity	
-1. Best Case(Target is the first element)	              O(1)	
-2. Average Case                                           O(n)
-(Target is generally located somewhere in the middle,
-assuming a uniformly distributed target in the array)	
-3. worst Case                                             O(n)
+            
+1. Best Case(Target is the first element) - O(1)	
+2. Average Case - O(n)
+(Target is generally located somewhere in the middle,assuming a uniformly distributed target in the array)	
+3. worst Case - O(n)
 (Target is the last element or is absent from the array)
-4. Auxiliary Space	                                      O(1)	
+4. Auxiliary Space  - O(1)	
 
 ## Properties
 Stable: Not applicable — stability is generally a property of sorting algorithms.
